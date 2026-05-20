@@ -1,0 +1,80 @@
+/* (Mobile-First) */
+* { box-sizing: border-box; }
+body { 
+    font-size: 14px; 
+    margin: 0; }
+
+.header { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 15px; background: #333; 
+    color: white; 
+}
+.nav { 
+    display: none; 
+} 
+.hamburger { 
+    display: block; 
+}
+.sidebar { 
+    display: none; 
+} 
+.ads-bar { 
+    display: none; 
+}
+
+.product-grid { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+    padding: 15px; 
+}
+.card { 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+    body { 
+        font-size: 16px; 
+    }
+    .sidebar { 
+        display: block; 
+        padding: 15px; 
+        background: #f4f4f4; 
+    }
+    .product-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+    body { 
+        font-size: 18px; 
+    }
+    .nav { 
+        display: flex; 
+        gap: 20px; 
+    }
+    .hamburger { 
+        display: none; 
+    }
+    
+    .container { 
+        display: grid; 
+        grid-template-columns: 200px 1fr 200px; 
+        gap: 20px; 
+        padding: 20px; 
+    }
+    .product-grid { 
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    .ads-bar { 
+        display: block; 
+        padding: 15px; 
+        background: #f4f4f4; 
+    }
+}

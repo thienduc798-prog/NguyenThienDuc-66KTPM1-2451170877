@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing-md $spacing-lg;
+    background: $primary-color;
+    color: white;
+
+    .menu {
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 $spacing-md;
+            &:hover {
+                text-decoration: underline;
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+.card {
+    flex: 0 0 calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-md;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+
+    img { width: 100%; }
+
+    .card-title { font-family: $font-primary; margin-top: $spacing-sm; }
+
+    &:hover {
+        transform: translateY(-5px);
+        @include card-shadow;
+    }
+
+    &.featured { border: 2px solid $secondary-color; }
+}
+
+.btn-buy {
+    margin-top: auto;
+    padding: $spacing-md;
+    background: $btn-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    &:hover { background: darken($btn-color, 10%); }
+}
