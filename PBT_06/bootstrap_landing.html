@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap E-commerce Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">SHOPPING</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Giỏ hàng (0)</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"><div class="bg-primary text-white p-5 text-center" style="height: 400px;"><h1>Giảm giá 50%</h1></div></div>
+            <div class="carousel-item"><div class="bg-secondary text-white p-5 text-center" style="height: 400px;"><h1>Bộ sưu tập mới</h1></div></div>
+            <div class="carousel-item"><div class="bg-success text-white p-5 text-center" style="height: 400px;"><h1>Miễn phí vận chuyển</h1></div></div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <span class="badge bg-danger position-absolute top-0 start-0 m-2">Sale</span>
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">Sản phẩm 1</h5>
+                        <p class="card-text">Giá: 500.000đ</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quickView">Xem nhanh</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <div class="modal fade" id="quickView">
+        <div class="modal-dialog"><div class="modal-content"><div class="modal-body">Thông tin chi tiết sản phẩm ở đây!</div></div></div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container"><div class="row">
+            <div class="col-md-3"><h5>Về chúng tôi</h5></div>
+            <div class="col-md-3"><h5>Liên kết</h5></div>
+            <div class="col-md-3"><h5>Hỗ trợ</h5></div>
+            <div class="col-md-3"><h5>Liên hệ</h5></div>
+        </div></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
