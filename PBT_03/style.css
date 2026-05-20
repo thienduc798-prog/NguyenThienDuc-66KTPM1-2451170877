@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+main, #contact {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff;
+    padding: 20px 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: block; 
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 11pt;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+header nav ul li a.active {
+    color: #ffd700; 
+    border-bottom: 2px solid #ffd700;
+}
+
+#skills-table {
+    width: 100%;
+    border-collapse: collapse; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-top: 15px;
+}
+
+#skills-table th, #skills-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    font-size: 10.5pt;
+}
+
+#skills-table th {
+    background-color: #1e3c72;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#skills-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+#skills-table tbody tr:hover {
+    background-color: #f1f4f9;
+}
+
+#skills-table tfoot tr td {
+    font-weight: bold;
+    background-color: #eaeaea;
+    color: #555555;
+}
+
+#about article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+#about figure {
+    margin-bottom: 15px;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2a5298;
+}
+
+#about figcaption {
+    font-weight: bold;
+    font-size: 14pt;
+    margin-top: 8px;
+    color: #1e3c72;
+}
+
+#contact {
+    background-color: #eef2f7;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #2a5298; 
+}
+
+#contact h3 {
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+#contact ul {
+    list-style-position: inside;
+    padding-left: 5px;
+}
+
+footer {
+    background-color: #222222;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 9.5pt;
+}

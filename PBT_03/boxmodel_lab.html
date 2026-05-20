@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boxmodel.css">
+</head>
+<body>
+
+    <main class="lab-container">
+        
+        <div class="box-demo-wrapper">
+            <div class="box-demo content-box-demo">
+                <h3>Hộp 1 (content-box)</h3>
+                <p>Width gốc: 300px</p>
+                <p>Padding: 20px</p>
+                <p>Border: 5px</p>
+            </div>
+
+            <div class="box-demo border-box-demo">
+                <h3>Hộp 2 (border-box)</h3>
+                <p>Width gốc: 300px</p>
+                <p>Padding: 20px</p>
+                <p>Border: 5px</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="layout-container">
+        <h1 class="lab-title">Phần 2: Layout 3 cột (Container 1000px)</h1>
+        <p class="lab-desc">Tổng kích thước hiển thị vừa khít 1000px nhờ ứng dụng thuộc tính border-box.</p>
+        
+        <div class="row-3-columns">
+            <aside class="column sidebar-left">
+                <h2>Sidebar Trái</h2>
+                <p>Width: 250px</p>
+                <p>Padding: 15px</p>
+            </aside>
+
+            <section class="column main-content">
+                <h2>Content Chính</h2>
+                <p>Width: 500px</p>
+                <p>Padding: 20px</p>
+                <p>Bài viết hiển thị tại đây...</p>
+            </section>
+
+            <aside class="column sidebar-right">
+                <h2>Ads Phải</h2>
+                <p>Width: 250px</p>
+                <p>Padding: 15px</p>
+            </aside>
+        </div>
+    </div>
+
+</body>
+</html>
