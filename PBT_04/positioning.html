@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Playground</title>
+    <link rel="stylesheet" href="positioning.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">MyLogo</div>
+        <nav class="nav">
+            <a href="#" style="color:white; margin-left:15px;">Trang chủ</a>
+            <a href="#" style="color:white; margin-left:15px;">Sản phẩm</a>
+            <a href="#" style="color:white; margin-left:15px;">Liên hệ</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <h3>Danh mục</h3>
+            <ul>
+                <li>Thời trang</li>
+                <li>Công nghệ</li>
+                <li>Gia dụng</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>Danh sách sản phẩm</h1>
+            <div class="product-grid">
+                <div class="product-card">
+                    <span class="badge-hot">HOT</span>
+                    <div style="height:150px; background:#ddd; margin-bottom:10px;"></div>
+                    <h3>Sản phẩm 1</h3>
+                </div>
+                <div class="product-card">
+                    <span class="badge-hot">HOT</span>
+                    <div style="height:150px; background:#ddd; margin-bottom:10px;"></div>
+                    <h3>Sản phẩm 2</h3>
+                </div>
+                <div class="product-card">
+                    <div style="height:150px; background:#ddd; margin-bottom:10px;"></div>
+                    <h3>Sản phẩm 3</h3>
+                </div>
+                <div class="product-card">
+                    <div style="height:150px; background:#ddd; margin-bottom:10px;"></div>
+                    <h3>Sản phẩm 4</h3>
+                </div>
+            </div>
+            <div style="height: 1000px;"></div> </main>
+    </div>
+
+    <button class="scroll-to-top" onclick="window.scrollTo(0,0)">↑</button>
+
+</body>
+</html>
