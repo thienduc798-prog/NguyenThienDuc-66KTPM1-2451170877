@@ -1,0 +1,51 @@
+body{
+    background:#f3f3f3;
+}
+
+        .main-box{
+            border:2px solid #6c8cff;
+            padding:20px;
+        }
+
+        .task-card{
+            background:white;
+            border-radius:20px;
+        }
+        .priority-circle{
+            width:22px;
+            height:22px;
+            border-radius:50%;
+        }
+
+        .high{
+            border:2px solid #d9d9d9;
+        }
+
+        .low{
+            border:2px solid #7c4dff;
+        }
+
+        .medium{
+            border:2px solid #7c4dff;
+            border-right-color: transparent;        
+        }
+
+        .status{
+            background:#eee;
+            padding:5px 12px;
+            border-radius:8px;
+            font-size:13px;
+        }
+
+        .add-btn{
+            background:#6f42c1;
+            color:white;
+            border:none;
+            border-radius:12px;
+            padding:10px 25px;
+        }
+
+        .form-box{
+            border:2px solid #6c8cff;
+            padding:20px;
+        }
